@@ -22,8 +22,10 @@
 
     <!-- custom styles -->
     <style>
-        #menu {text-align: center;}
-        #menu .fa-times {padding: 0 2px;}
+        banner .navbar-dark {background: #b1e6de;}
+        #menu {text-align: center; background-color: #194656;}
+        #menu .fa-bars {color: #b1e6de;}
+        #menu .fa-times {padding: 0 2px; color: #eb895d;}
         #sidenav {
             height: 100%;
             width: 0;
@@ -31,22 +33,26 @@
             z-index: 1;
             top: 30;
             right: 0;
-            background-color: #006b80;
+            background-color: #194656;
             overflow-x: hidden;
-            padding-top: 10px;
+            padding-top: 0px;
             transition: 0.5s;
         }
-        #sidenav .list-group-item {background-color: #006b80;}
-        #sidenav a {
-            padding: 8px 8px 8px 32px;
-            font-size: 18px;
-            color: #ccc;
-            display: block;
-            transition: 0.3s;
+        #sidenav .list-group-item {background-color: #194656;}
+        #sidenav .list-group-item a {
+            color: #dff1ef;
         }
-        #sidenav a:hover {
-            color: #fff;
+        #sidenav .list-group-item:hover,
+        #sidenav .list-group-item:active,
+        #sidenav .list-group-item:focus {
+            color: #194656;
+            background-color: #6cc3b6; 
         }
+        .navbar-dark .navbar-brand {color: #194656; font-family: 'Oleo Script Swash Caps', cursive; font-size: 2rem;}
+        .navbar-dark .navbar-brand:hover,
+        .navbar-dark .navbar-brand:active,
+        .navbar-dark .navbar-brand:focus {color: #194656;}
+        .navbar-dark .navbar-brand .fas {color: #eb895d; font-size: 24px;}
         .dot {
             height: 200px;
             width: 200px;
@@ -55,19 +61,19 @@
             opacity: 0.5;
         }
         .dot1 {
-            background-color: #bbb;
+            background-color: #b6dfdb;
             padding-top: 20%;
             margin-bottom: -30px;
         }
         .dot2 {
-            background-color: #bbb;
+            background-color: #f6c9b4;
             padding-top: 60%;
             margin-top: -50px;
             margin-left: -5px;
         }
         .dot2>h2 {margin-left: -50px;}
         .dot3 {
-            background-color: #bbb;
+            background-color: #b1e6de;
             padding-top: 60%;
             margin-top: -50px;
             margin-left: -50px;
@@ -86,11 +92,14 @@
 <!-- App content goes here -->
         
     <banner>
-        <div class="navbar navbar-dark pt-4" style="background:#84ebd8;">
-            <h1 class="navbar-brand pt-3" style="color:#006b80; font-family: 'Oleo Script Swash Caps', cursive; font-size: 2rem">WellNurse <span class="fas fa-heartbeat" style="color:#e66f00; font-size:24px"></span></h1><button type="button" style="background-color:#006b80;" id="menu" class="navbar-toggler js-closed"><span class="fas fa-bars"></span></button>
+        <div class="navbar navbar-dark pt-4">
+            <h1 class="navbar-brand pt-3">WellNurse <span class="fas fa-heartbeat"></span></h1>
+            <button type="button" id="menu" class="navbar-toggler js-closed">
+                <span class="fas fa-bars"></span>
+            </button>
         </div>
     </banner>
-    <nav style="positon:relative;">
+    <nav>
         <ul id="sidenav" class="list-group list-group-flush">
           <li class="list-group-item"><a href="#" class="stretched-link">Settings</a></li>
           <li class="list-group-item"><a href="#" class="stretched-link">Check</a></li>
@@ -99,6 +108,8 @@
           <li class="list-group-item"><a href="#" class="stretched-link">Logout</a></li>
         </ul>
     </nav>
+    <!--Photo by EVG photos from Pexels-->
+    
     <div class="m-4">
         <div class="row">
             <div class="col text-center"><a href="#" class="dot dot1 stretched-link"><h2 class="h4">Check</h2></a></div>
