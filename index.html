@@ -1,0 +1,145 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- favicon.ico later -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- marvelapp devices.css https://github.com/marvelapp/devices.css -->
+    <link rel="stylesheet" href="css/devices.min.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet">
+
+    <!-- custom styles -->
+    <style>
+        #sidenav {
+            height: 100%;
+            width: 0;
+            position: absolute;
+            z-index: 1;
+            top: 30;
+            right: 0;
+            background-color: #006b80;
+            overflow-x: hidden;
+            padding-top: 10px;
+            transition: 0.5s;
+        }
+        #sidenav .list-group-item {background-color: #006b80;}
+        #sidenav a {
+            padding: 8px 8px 8px 32px;
+            font-size: 18px;
+            color: #ccc;
+            display: block;
+            transition: 0.3s;
+        }
+        #sidenav a:hover {
+            color: #fff;
+        }
+        .dot {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            display: inline-block;
+            opacity: 0.5;
+        }
+        .dot1 {
+            background-color: #bbb;
+            padding-top: 20%;
+            margin-bottom: -30px;
+        }
+        .dot2 {
+            background-color: #bbb;
+            padding-top: 60%;
+            margin-top: -50px;
+            margin-left: -5px;
+        }
+        .dot2>h2 {margin-left: -50px;}
+        .dot3 {
+            background-color: #bbb;
+            padding-top: 60%;
+            margin-top: -50px;
+            margin-left: -50px;
+            opacity: 0.5;
+        }
+        .dot3>h2 {margin-left: 50px;}
+    </style>
+</head>
+
+<body>
+<main class="text-center pt-2">
+
+<!-- marvelapp devices.css -->
+<div class="marvel-device iphone-x"><div class="notch"><div class="camera"></div><div class="speaker"></div></div><div class="top-bar"></div><div class="sleep"></div><div class="bottom-bar"></div><div class="volume"></div><div class="overflow"><div class="shadow shadow--tr"></div><div class="shadow shadow--tl"></div><div class="shadow shadow--br"></div><div class="shadow shadow--bl"></div></div><div class="inner-shadow"></div><div class="screen text-left">
+        
+<!-- App content goes here -->
+        
+    <banner>
+        <div class="navbar navbar-dark pt-4" style="background:#84ebd8;">
+            <h1 class="navbar-brand pt-3" style="color:#006b80; font-family: 'Oleo Script Swash Caps', cursive; font-size: 2rem">WellNurse <span class="fas fa-heartbeat" style="color:#e66f00; font-size:24px"></span></h1><button type="button" style="background-color:#006b80;" id="menu" class="navbar-toggler js-closed"><span class="fas fa-bars"></span></button>
+        </div>
+    </banner>
+    <nav style="positon:relative;">
+        <ul id="sidenav" class="list-group list-group-flush">
+          <li class="list-group-item"><a href="#" class="stretched-link">Settings</a></li>
+          <li class="list-group-item"><a href="#" class="stretched-link">Check</a></li>
+          <li class="list-group-item"><a href="#" class="stretched-link">Connect</a></li>
+          <li class="list-group-item"><a href="#" class="stretched-link">Practice</a></li>
+          <li class="list-group-item"><a href="#" class="stretched-link">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="m-4">
+        <div class="row">
+            <div class="col text-center"><a href="#" class="dot dot1 stretched-link"><h2 class="h4">Check</h2></a></div>
+        </div>
+        <div class="row">
+            <div class="col-6 text-center"><a href="#" class="dot dot2 stretched-link"><h2 class="h4">Connect</h2></a></div>
+            <div class="col-6 text-center"><a href="#" class="dot dot3 stretched-link"><h2 class="h4">Practice</h2></a></div>
+        </div>
+    </div>
+
+        
+<!-- Content goes here -->
+</div></div>
+</main>
+       
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<!-- Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+<!-- Custom js -->
+<script>
+    $(function(){
+        $('#menu').click(function() {            
+            if ($(this).hasClass('js-closed')) {
+                $('#sidenav').css('width', '150px');
+                $('#menu').removeClass('js-closed').addClass('js-open');
+                $('#menu>span').removeClass('fa-bars').addClass('fa-times');
+            } else {
+                $('#sidenav').css('width', '0px');
+                $('#menu').removeClass('js-open').addClass('js-closed');
+                $('#menu>span').removeClass('fa-times').addClass('fa-bars');
+            }
+        });
+    });
+</script>
+    
+<!-- Font Awesome icons -->
+<script src="https://kit.fontawesome.com/cdfb296fcf.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
