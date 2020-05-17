@@ -1,0 +1,202 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WellNurse Check step 3 of 3</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- favicon.ico later -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- marvelapp devices.css https://github.com/marvelapp/devices.css -->
+    <link rel="stylesheet" href="css/devices.min.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@515&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- custom styles -->
+    <style>
+        body {font-family: 'Quicksand', sans-serif;}
+        a {color: #4caf94; font-weight: 700;}
+        banner .navbar-dark {background: #b1e6de;}
+        #menu {text-align: center; background-color: #194656;}
+        #menu .fa-bars {color: #b1e6de;}
+        #menu .fa-times {padding: 0 2px; color: #eb895d;}
+        #sidenav {
+            height: 100%;
+            width: 0;
+            position: absolute;
+            z-index: 1;
+            top: 30;
+            right: 0;
+            background-color: #194656;
+            overflow-x: hidden;
+            padding-top: 0px;
+            transition: 0.5s;
+        }
+        #sidenav .list-group-item {background-color: #194656;}
+        #sidenav .list-group-item a {
+            color: #dff1ef;
+        }
+        #sidenav .list-group-item:hover,
+        #sidenav .list-group-item:active,
+        #sidenav .list-group-item:focus {
+            background-color: #6cc3b6; 
+        }
+        #sidenav .list-group-item:hover a,
+        #sidenav .list-group-item:active a,
+        #sidenav .list-group-item:focus a {
+            color: #194656;
+            font-weight: bold;
+        }
+        .navbar-dark .navbar-brand {color: #194656; font-family: 'Quicksand', sans-serif; font-size: 2rem;}
+        .navbar-dark .navbar-brand:hover,
+        .navbar-dark .navbar-brand:active,
+        .navbar-dark .navbar-brand:focus {color: #194656;}
+        .navbar-dark .navbar-brand .fas {color: #eb895d !important; font-size: 24px;}
+        .navbar-dark .navbar-brand a {color: #194656;}
+        .navbar-dark .navbar-brand a:hover,
+        .navbar-dark .navbar-brand a:active,
+        .navbar-dark .navbar-brand a:focus {color: #4caf94; text-decoration: none;}
+        .text-success {color: #8cc63e !important;}
+        .check-btn {font-size: 32px; color: #194656;}
+        .check-btn:hover,
+        .check-btn:active,
+        .check-btn:focus {color: #4caf94; text-decoration: none;}
+    </style>
+</head>
+
+<body>
+<main class="text-center pt-2">
+
+<!-- marvelapp devices.css -->
+<div class="marvel-device iphone-x"><div class="notch"><div class="camera"></div><div class="speaker"></div></div><div class="top-bar"></div><div class="sleep"></div><div class="bottom-bar"></div><div class="volume"></div><div class="overflow"><div class="shadow shadow--tr"></div><div class="shadow shadow--tl"></div><div class="shadow shadow--br"></div><div class="shadow shadow--bl"></div></div><div class="inner-shadow"></div><div class="screen text-left">
+        
+<!-- App content goes here -->
+        
+    <banner>
+        <div class="navbar navbar-dark pt-4">
+            <h1 class="navbar-brand pt-3"><a href="index.html">WellNurse <span class="fas fa-heartbeat"></span></a></h1>
+            <button type="button" id="menu" class="navbar-toggler js-closed">
+                <span class="fas fa-bars"></span>
+            </button>
+        </div>
+    </banner>
+    <nav>
+        <ul id="sidenav" class="list-group list-group-flush">
+          <li class="list-group-item"><a href="index.html" class="stretched-link">Home</a></li>
+          <li class="list-group-item"><a href="check.html" class="stretched-link">Check</a></li>
+          <li class="list-group-item"><a href="connect.html" class="stretched-link">Connect</a></li>
+          <li class="list-group-item"><a href="practice.html" class="stretched-link">Practice</a></li>
+          <li class="list-group-item"><a href="#" class="stretched-link">Settings</a></li>
+          <li class="list-group-item"><a href="#" class="stretched-link">Logout</a></li>
+        </ul>
+    </nav>
+    <h2 class="p-3" style="background-color: #00596b; color: #fff; font-size: 18px;">Strategies</h2>
+    <h3 class="mt-5 mb-4 ml-4 mr-4" style="font-size: 45px; color: #00596b;">Strategies to help you thrive:</h3>
+    <div class="row text-center">
+        <div class="col"><img src="img/check9.gif" style="width: 90%"></div>
+    </div>
+    
+    <div class="text-right mr-3 mt-5">
+        <a href="practice.html" class="check-btn">Next <span class="fas fa-chevron-right"></span></a>
+    </div>
+
+
+<!-- Content goes here -->
+</div></div>
+</main>
+       
+<!-- jQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<!-- Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+<!-- Custom js -->
+<script>
+    $(function(){
+        $('#menu').click(function() {            
+            if ($(this).hasClass('js-closed')) {
+                $('#sidenav').css('width', '150px');
+                $('#menu').removeClass('js-closed').addClass('js-open');
+                $('#menu>span').removeClass('fa-bars').addClass('fa-times');
+            } else {
+                $('#sidenav').css('width', '0px');
+                $('#menu').removeClass('js-open').addClass('js-closed');
+                $('#menu>span').removeClass('fa-times').addClass('fa-bars');
+            }
+        });
+        
+        $('#js-body1').click(function() {            
+            if ($(this).hasClass('js-unchecked')) {
+                $('#js-check1').removeClass('fa-circle').addClass('fa-check-circle text-success');
+                $('#js-body1').removeClass('js-unchecked').addClass('js-checked');
+                
+                $('#js-check2').removeClass('fa-check-circle text-success').addClass('fa-circle');
+                $('#js-body2').removeClass('js-checked').addClass('js-unchecked');
+                
+                $('#js-check3').removeClass('fa-check-circle text-success').addClass('fa-circle');
+                $('#js-body3').removeClass('js-checked').addClass('js-unchecked');
+            } else {
+                $('#js-check1').removeClass('fa-check-circle text-success').addClass('fa-circle');
+                $('#js-body1').removeClass('js-checked').addClass('js-unchecked');
+
+            }
+        });
+        $('#js-body2').click(function() {            
+            if ($(this).hasClass('js-unchecked')) {
+                $('#js-check2').removeClass('fa-circle').addClass('fa-check-circle text-success');
+                $('#js-body2').removeClass('js-unchecked').addClass('js-checked');
+                
+                $('#js-check1').removeClass('fa-check-circle text-success').addClass('fa-circle');
+                $('#js-body1').removeClass('js-checked').addClass('js-unchecked');
+                
+                $('#js-check3').removeClass('fa-check-circle text-success').addClass('fa-circle');
+                $('#js-body3').removeClass('js-checked').addClass('js-unchecked');
+                
+            } else {
+                $('#js-check2').removeClass('fa-check-circle text-success').addClass('fa-circle');
+                $('#js-body2').removeClass('js-checked').addClass('js-unchecked');
+            }
+        });
+        $('#js-body3').click(function() {            
+            if ($(this).hasClass('js-unchecked')) {
+                $('#js-check3').removeClass('fa-circle').addClass('fa-check-circle text-success');
+                $('#js-body3').removeClass('js-unchecked').addClass('js-checked');
+                
+                $('#js-check1').removeClass('fa-check-circle text-success').addClass('fa-circle');
+                $('#js-body1').removeClass('js-checked').addClass('js-unchecked');
+                
+                $('#js-check2').removeClass('fa-check-circle text-success').addClass('fa-circle');
+                $('#js-body2').removeClass('js-checked').addClass('js-unchecked');
+                
+            } else {
+                $('#js-check3').removeClass('fa-check-circle text-success').addClass('fa-circle');
+                $('#js-body3').removeClass('js-checked').addClass('js-unchecked');
+            }
+        });
+        
+    });
+</script>
+    
+<!-- Font Awesome icons -->
+<script src="https://kit.fontawesome.com/cdfb296fcf.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
